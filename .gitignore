@@ -5,15 +5,44 @@ node_modules/
 # Next.js output
 .next/
 out/
+next-env.d.ts
 
-# local configuration and logs
-.env
-.env.local
-.env.*.local
+# environment variables
+.env*
+!.env.example
+
+# logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# generated caches
+# tests and coverage
+coverage/
+.nyc_output/
+
+# generated caches and tooling
 *.tsbuildinfo
+.turbo/
+.cache/
+.swc/
+.eslintcache
+
+# deployment
+.vercel/
+
+# certificates and keys
+*.pem
+
+# editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # operating system
 .DS_Store
