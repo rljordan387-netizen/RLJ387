@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js output
+.next/
+out/
+
+# local configuration and logs
+.env
+.env.local
+.env.*.local
+*.log
+
+# generated caches
+*.tsbuildinfo
+
+# operating system
+.DS_Store
+Thumbs.db

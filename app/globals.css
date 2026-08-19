@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ivory: #f4f0e7;
+  --color-paper: #fbf8f1;
+  --color-navy: #10283e;
+  --color-teal: #175d62;
+  --color-gold: #d6a85f;
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-newsreader);
+}
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f4f0e7; color: #10283e; font-family: var(--font-inter), sans-serif; text-rendering: optimizeLegibility; }
+::selection { background: #d6a85f; color: #10283e; }
+a { text-underline-offset: 0.2em; }
+.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 100; border-radius: 999px; background: #10283e; color: #f4f0e7; padding: .75rem 1rem; }
+.skip-link:focus { top: 1rem; }
+.text-balance { text-wrap: balance; }
+.portrait-shell::before { content: ""; position: absolute; inset: 12% 14% 0; border-radius: 48% 48% 0 0; background: linear-gradient(145deg, rgba(244,240,231,.14), rgba(23,93,98,.8)); transform: rotate(3deg); }
+.portrait-shell::after { content: ""; position: absolute; width: 46%; aspect-ratio: 1; right: 10%; top: 18%; border-radius: 50%; background: #d6a85f; opacity: .88; }
+.portrait-orbit { position: absolute; border: 1px solid rgba(244,240,231,.22); border-radius: 50%; z-index: 1; }
+.portrait-orbit-one { width: 80%; aspect-ratio: 1; left: -30%; top: 10%; }
+.portrait-orbit-two { width: 58%; aspect-ratio: 1; right: -28%; top: 33%; }
+.prose-editorial { color: rgba(16,40,62,.78); font-size: 1.125rem; line-height: 1.9; }
+.prose-editorial h2 { color: #10283e; font-family: var(--font-newsreader), serif; font-size: clamp(2rem,5vw,3rem); line-height: 1.08; letter-spacing: -.025em; margin: 4rem 0 1.25rem; }
+.prose-editorial h3 { color: #10283e; font-family: var(--font-newsreader), serif; font-size: 1.75rem; line-height: 1.2; margin: 2.75rem 0 1rem; }
+.prose-editorial p { margin: 0 0 1.5rem; }
+.prose-editorial ul { margin: 1rem 0 1.75rem; padding-left: 1.25rem; }
+.prose-editorial li { margin: .6rem 0; padding-left: .35rem; }
+.prose-editorial strong { color: #10283e; font-weight: 700; }
+.prose-editorial blockquote { border-left: 2px solid #d6a85f; color: #10283e; font-family: var(--font-newsreader), serif; font-size: 1.5rem; line-height: 1.45; margin: 2.5rem 0; padding-left: 1.5rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
